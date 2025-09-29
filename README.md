@@ -48,15 +48,21 @@ Trigger the DAG dbt_dag from the Airflow UI or CLI.
 
 The DAG will execute dbt models defined in the project directory, using the Snowflake connection specified.
 
-🧩 Project Structure
-├── dags/
-│   └── dbt_dag.py          # Airflow DAG definition
-├── dbt_project/
-│   ├── models/
-│   │   └── stg_tpch_line_items.sql  # Example dbt model
-│   └── dbt_project.yml      # dbt project configuration
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+# 🧩 Project Structure
+
+### dags
+- `dbt_dag.py` &mdash; Airflow DAG definition
+
+### dbt_project
+- **models**
+  - `stg_tpch_line_items.sql` &mdash; Example dbt model
+- `dbt_project.yml` &mdash; dbt project configuration
+
+### requirements.txt
+- Python dependencies
+
+### README.md
+- Project documentation
 
 # 📄 License
 
